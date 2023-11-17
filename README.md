@@ -8,20 +8,20 @@
 | 19/0089601 | [João Lucas Pinto Vasconcelos](https://github.com/HacKairos) |
 
 ## Sobre 
-Meu projeto se trata sobre a resolução de alguns exercícios no juiz online, nessa entrega fiz 3 exercicios, sendo 2 do LeetCode e 1 do beecrowd, tentando chegar em uma resolução utilizando os algoritmos apresentados no decorrer das aulas de Dividir e Conquistar, os exercicios escolhidos e suas respectivas dificuldades foram :
+Meu projeto se trata sobre a resolução de alguns exercícios no juiz online, nessa entrega fiz 3 exercícios, sendo 2 do [LeetCode](https://leetcode.com/) e 1 do [Beecrowd](https://www.beecrowd.com.br/judge/pt), tentando chegar em uma resolução utilizando os algoritmos apresentados no decorrer das aulas de Dividir e Conquistar, os exercícios escolhidos e suas respectivas dificuldades foram:
 
-[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/): Dificil
+[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/): Difícil
 
 [Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/description/): Mediana
 
 [Problema dos Pares Mais Próximos](https://www.beecrowd.com.br/judge/pt/problems/view/1295): 9 em uma escala de 10
 
-## Video
-Para o video eu disponibilizei no repositorio com uma qualidade bem duvidoso e bem acelerado devido limitações do github, e disponibilizei o video no Youtube.
+## Vídeo
+Para o vídeo eu disponibilizei no repositório e disponibilizei o vídeo no Youtube.
 
-[Repositorio](video/video.mp4)
+[Repositório](video/video.mp4)
 
-[Youtube](https://youtu.be/)
+[Youtube](https://youtu.be/uqxOoM3LTLQ)
 
 ## Resultados
 
@@ -101,7 +101,7 @@ A classe Solution é definida com três métodos: findmom, findkth e findMedianS
 
 O método findmom é usado para encontrar a mediana de um array. Se o array tiver 5 ou menos elementos, ele simplesmente ordena o array e retorna a mediana. Caso contrário, ele divide o array em grupos de 5, encontra a mediana de cada grupo e recursivamente encontra a mediana das medianas.
 
-O método findkth é usado para encontrar o k-ésimo menor elemento em um array. Primeiro, ele encontra a mediana do array usando o método findmom. Em seguida, divide o array em três partes: elementos menores que a mediana (L), elementos iguais à mediana (M) e elementos maiores que a mediana (R). Se k está dentro do intervalo de L, ele procura o k-ésimo menor elemento em L. Se k está dentro do intervalo de L+M, ele retorna a mediana. Se k está dentro do intervalo de L+M+R, ele procura o (k-len(L)-len(M))-ésimo menor elemento em R.
+O método findkth é usado para encontrar o k-ésimo menor elemento em um array. Primeiro, ele encontra a mediana do array usando o método findmom. Em seguida, divide o array em três partes: elementos menores que a mediana (L), elementos iguais à mediana (M) e elementos maiores que a mediana (R). Se k está dentro do intervalo de L, ele procura o k-ésimo menor elemento em L. Se k está dentro do intervalo de L+M, ele retorna a mediana. Se k está dentro do intervalo de L+M+R, ele procura o (K-len(L)-len(M)) menor elemento em R.
 
 O método findMedianSortedArrays é usado para encontrar a mediana de dois arrays ordenados. Ele concatena os dois arrays e calcula o tamanho total. Se o tamanho total é par, ele encontra os dois elementos do meio e retorna a média deles. Se o tamanho total é ímpar, ele encontra o elemento do meio e o retorna.
 
